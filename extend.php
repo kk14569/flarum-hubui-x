@@ -1,6 +1,6 @@
 <?php
 
-namespace kk14569\flarum-hubui-x;
+namespace kk14569\flarumhubuix;
 
 use Flarum\Extend;
 use Flarum\Frontend\Document;
