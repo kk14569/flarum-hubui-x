@@ -1,0 +1,176 @@
+/* HubUi-X Theme */
+@border-radius: 12px;
+.WelcomeHero {
+    color: #fdfdfd;
+    background: linear-gradient(160deg, var(--control-bg-shaded), var(--button-primary-bg-hover));
+}
+body, #app .App-content {
+    background-color: var(--control-bg-light);
+}
+#drawer, #app-navigation, #header {
+    & when (@config-colored-header = false){
+        background-color: var(--control-bg-light);
+    }
+}
+.AfruxWidgets-Widget-content {
+    border-radius: @border-radius;
+}
+.item-like .Button--link .Button-label,.item-dislike .Button--link .Button-label,.item-reply .Button--link .Button-label {
+	display:none;
+}
+.item-like .Button:before {
+	font-family:'Font Awesome 5 Free';
+	font-weight:600;
+	font-size:14px;
+	content:'\f164';
+	vertical-align:-1px;
+}
+.item-dislike .Button:before {
+	font-family:'Font Awesome 5 Free';
+	font-weight:600;
+	font-size:14px;
+	content:'\f165';
+	vertical-align:-3px;
+}
+.item-reply .Button--link:before {
+	font-family:'Font Awesome 5 Free';
+	font-weight:600;
+	font-size:15px;
+	content:'\f3e5';
+	margin-right:4px;
+	vertical-align:-2px;
+}
+.PostStream {
+    border-radius: @border-radius;
+    margin: 4px;
+    padding: 4px 22px 4px 22px;
+    & when (@config-dark-mode = false) {
+        background-color: rgba(255,255,255,0.8);
+    }
+    & when (@config-dark-mode = true) {
+        background-color: rgba(14,14,14,0.8);
+    }
+}
+.PostsUserPage {
+    border-radius: @border-radius;
+    margin: 4px;
+    padding: 12px 22px 12px 22px;
+    & when (@config-dark-mode = false) {
+        background-color: rgba(255,255,255,0.8);
+    }
+    & when (@config-dark-mode = true) {
+        background-color: rgba(14,14,14,0.8);
+    }
+}
+.DiscussionListItem {
+    margin: 8px 0px 8px 0px;
+    border-radius: @border-radius !important;
+    & when (@config-dark-mode = false) {
+        background-color: rgba(255,255,255,0.8);
+    }
+    & when (@config-dark-mode = true) {
+        background-color: rgba(14,14,14,0.8);
+    }
+}
+.DiscussionListItem-content {
+    border-radius: @border-radius !important;
+}
+aside.DiscussionPage-list {
+    padding: 4px;
+}
+.Slidable-content {
+    margin-top: 4px;
+}
+@media @phone {
+    .DiscussionListItem {
+        margin: 8px;
+    }
+}
+@media @tablet-up {
+    li.item-nav {
+        padding: 2px 12px 2px 12px;
+        border-radius: @border-radius;
+        & when (@config-dark-mode = false) {
+            background-color: rgba(255,255,255,0.8);
+        }
+        & when (@config-dark-mode = true) {
+            background-color: rgba(14,14,14,0.8);
+        }
+    }
+}
+.Badge {
+    opacity: 0.9;
+    color: #fff;
+}
+.Hero-close {
+    display: none;
+}
+header.Hero.DiscussionHero, header.Hero.WelcomeHero {
+    border-radius: @border-radius;
+}
+.darkenBackground,.Hero {
+    border-radius: @border-radius;
+}
+.Hero {
+    margin: 12px;
+}
+.Dropdown-menu {
+    border-radius: @border-radius;
+    padding: 1px;
+    &>li {
+        margin: 4px;
+        &>a, &>button {
+            border-radius: @border-radius;
+        }
+    }
+}
+ul.NotificationGroup-content {
+    &>li {
+        margin: 4px 8px;
+        &>a {
+            &.Notification {
+                border-radius: @border-radius;
+            }
+            &.unread .Notification-title:after {
+                content: '';
+                display: inline-block;
+                width: 1em;
+                height: 1em;
+                border-radius: 50%;
+                background-color: var(--primary-color);
+                transform: translateY(10%);
+                margin-left: 8px;
+            }
+        }
+    }
+}
+.Composer {
+    border-radius: 12px 12px 0 0;
+}
+.ComposerBody-loading {
+    border-radius: 12px;
+}
+@media (min-width:992px){
+    .TagTiles>li{
+        width: 30% !important;
+        border-radius: @border-radius !important;
+        margin: 15px;
+    }
+}
+@media (max-width:991px) and (min-width:768px){
+    .TagTiles>li{
+        width: 45% !important;
+        border-radius: @border-radius !important;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 767px){
+    .TagTiles>li{
+        border-radius: @border-radius !important;
+        margin: 15px;
+    }
+}
+.Button:active, .Button.active, .open>.Button.Dropdown-toggle {
+	box-shadow: unset;
+}
