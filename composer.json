@@ -1,0 +1,19 @@
+{
+    "name": "kk14569/flarum-hubui-x",
+    "description": "A modern and soft theme designed by 14569 for Flarum.",
+    "type": "flarum-extension",
+    "require": {
+        "flarum/core": "^1.0"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "HubUi-X",
+            "category": "theme",
+            "icon": {
+                "name": "fas fa-th-large",
+                "backgroundColor": "#0076D4",
+                "color": "#fff"
+            }
+        }
+    }
+}
