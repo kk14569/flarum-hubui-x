@@ -2,8 +2,19 @@
     "name": "kk14569/flarum-hubui-x",
     "description": "A modern and soft theme designed by 14569 for Flarum.",
     "type": "flarum-extension",
-    "version": "v1.0.5",
+    "version": "v1.0.6",
     "license": "MIT",
+    "support": {
+        "issues": "https://github.com/kk14569/flarum-hubui-x/issues",
+        "source": "https://github.com/kk14569/flarum-hubui-x",
+        "forum": "https://discuss.flarum.org/d/34823"
+    },
+    "authors": [
+        {
+            "name": "14569",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "flarum/core": "^1.8.0"
     },
