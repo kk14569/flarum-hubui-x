@@ -6,6 +6,16 @@
 .Button:active, .Button.active, .open>.Button.Dropdown-toggle {
     box-shadow: unset;
 }
+.Dropdown-menu {
+    border-radius: @border-radius;
+    padding: 1px;
+    &>li {
+        margin: 4px;
+        &>a, &>button, &>span {
+            border-radius: @border-radius;
+        }
+    }
+}
 .LoadingIndicator {
     animation: none;
     border: none;
