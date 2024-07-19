@@ -1,5 +1,15 @@
 /* HubUi-X Theme */
 @border-radius: 12px;
+.Dropdown-menu {
+    border-radius: @border-radius;
+    padding: 1px;
+    &>li {
+        margin: 4px;
+        &>a, &>button, &>span {
+            border-radius: @border-radius;
+        }
+    }
+}
 .Button {
     transition: background-color 0.4s;
 }
