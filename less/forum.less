@@ -51,7 +51,7 @@ body, #app .App-content {
         background-color: rgba(14,14,14,0.8);
     }
 }
-.PostsUserPage, .SettingsPage, .UserSecurityPage {
+.PostsUserPage, .SettingsPage, .UserSecurityPage, .MasqueradeRoot {
     border-radius: @border-radius;
     margin-top: 4px;
     padding: 12px 22px 12px 22px;
@@ -94,6 +94,9 @@ aside.DiscussionPage-list {
 @media @phone {
     .DiscussionListItem {
         margin: 8px;
+    }
+    .SettingsPage, .UserSecurityPage {
+        padding: 8px;
     }
 }
 @media @tablet-up {
