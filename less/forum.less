@@ -1,5 +1,4 @@
 /* HubUi-X Theme */
-@import "common.less";
 .WelcomeHero {
     color: #fdfdfd;
     background: linear-gradient(160deg, var(--control-bg-shaded), var(--button-primary-bg-hover));
@@ -42,7 +41,7 @@ body, #app .App-content {
 }
 .PostStream {
     border-radius: @border-radius;
-    margin: 4px;
+    margin-top: 4px;
     padding: 4px 22px 4px 22px;
     & when (@config-dark-mode = false) {
         background-color: rgba(255,255,255,0.8);
@@ -53,7 +52,7 @@ body, #app .App-content {
 }
 .PostsUserPage, .SettingsPage, .UserSecurityPage {
     border-radius: @border-radius;
-    margin: 4px;
+    margin-top: 4px;
     padding: 12px 22px 12px 22px;
     & when (@config-dark-mode = false) {
         background-color: rgba(255,255,255,0.8);
