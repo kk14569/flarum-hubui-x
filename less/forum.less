@@ -51,7 +51,7 @@ body, #app .App-content {
         background-color: rgba(14,14,14,0.8);
     }
 }
-.PostsUserPage, .SettingsPage, .UserSecurityPage, .MasqueradeRoot {
+.PostsUserPage {
     border-radius: @border-radius;
     margin-top: 4px;
     padding: 12px 22px 12px 22px;
@@ -95,9 +95,6 @@ aside.DiscussionPage-list {
     .DiscussionListItem {
         margin: 8px;
     }
-    .SettingsPage, .UserSecurityPage {
-        padding: 8px;
-    }
 }
 @media @tablet-up {
     li.item-nav {
@@ -109,6 +106,17 @@ aside.DiscussionPage-list {
         & when (@config-dark-mode = true) {
             background-color: rgba(14,14,14,0.8);
         }
+    }
+    .SettingsPage, .UserSecurityPage, .MasqueradeRoot {
+        border-radius: @border-radius;
+        margin-top: 4px;
+        padding: 12px 22px 12px 22px;
+        & when (@config-dark-mode = false) {
+            background-color: rgba(255,255,255,0.8);
+        }
+        & when (@config-dark-mode = true) {
+            background-color: rgba(14,14,14,0.8);
+        } 
     }
 }
 .Badge {
