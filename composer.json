@@ -2,7 +2,7 @@
     "name": "kk14569/flarum-hubui-x",
     "description": "A modern and soft theme designed by 14569 for Flarum.",
     "type": "flarum-extension",
-    "version": "v1.1.2",
+    "version": "v1.1.3",
     "license": "MIT",
     "require": {
         "flarum/core": "^1.8.0"
